@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 @ensure_annotations
-def read_yaml(path_to_yaml: Path) -> Configbox:
+def read_yaml(path_to_yaml: Path) -> ConfigBox:
     """
     reads yaml file and returns
     
@@ -34,7 +34,7 @@ def read_yaml(path_to_yaml: Path) -> Configbox:
         raise e
     
 @ensure_annotations
-def create_directions(path_to_directories: list, verbose=True):
+def create_directories(path_to_directories: list, verbose=True):
     """
     create list of directories
     Argd: path_to_directories (list): list of path of directories
